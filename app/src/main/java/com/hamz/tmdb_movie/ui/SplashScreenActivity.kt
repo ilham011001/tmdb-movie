@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
+import android.view.Window
+import android.view.WindowManager
 import com.hamz.tmdb_movie.R
 import com.hamz.tmdb_movie.ui.genre.GenreActivity
 
