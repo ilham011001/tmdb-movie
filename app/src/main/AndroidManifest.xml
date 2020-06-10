@@ -13,6 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.SplashScreenActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.detail.review.WebviewReviewActivity"
             android:parentActivityName=".ui.detail.review.WebviewReviewActivity" />
@@ -22,19 +29,11 @@
         <activity
             android:name=".ui.detail.movie.DetailMovieActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.genre.GenreActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ui.genre.GenreActivity" />
         <activity
             android:name=".ui.movie.MovieActivity"
             android:parentActivityName=".ui.movie.MovieActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

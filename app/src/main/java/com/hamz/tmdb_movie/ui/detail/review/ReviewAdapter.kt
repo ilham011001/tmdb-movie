@@ -68,6 +68,8 @@ class ReviewAdapter(private val listener: Listener) : RecyclerView.Adapter<Recyc
         Log.e(TAG, "total review size: ${this.reviews.size}")
     }
 
+    fun getReviewsSize(): Int = reviews.size
+
     inner class ReviewViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(review: Review?) {
             with(itemView) {

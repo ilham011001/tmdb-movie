@@ -36,6 +36,7 @@
         android:id="@+id/text_see"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
         android:text="See More"
         android:textColor="@color/colorTextSeeMore"
         app:layout_constraintEnd_toEndOf="parent"

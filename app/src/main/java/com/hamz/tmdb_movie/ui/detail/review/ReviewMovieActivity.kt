@@ -85,7 +85,7 @@ class ReviewMovieActivity : AppCompatActivity(), ReviewAdapter.Listener {
                     mReviewAdapter.notifyDataSetChanged()
                 }
 
-                if (reviews.size == 0) {
+                if (mReviewAdapter.getReviewsSize() == 0) {
                     Toast.makeText(this, "no review", Toast.LENGTH_SHORT).show()
                 }
             }
