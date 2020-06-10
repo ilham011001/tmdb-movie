@@ -37,8 +37,6 @@ class ReviewMovieActivity : AppCompatActivity(), ReviewAdapter.Listener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_review_movie)
 
-        title = "Review"
-
         movieId = intent.getLongExtra("movie_id", 0)
         Log.e(TAG, "movie id: $movieId")
 
@@ -50,7 +48,7 @@ class ReviewMovieActivity : AppCompatActivity(), ReviewAdapter.Listener {
     }
 
     private fun initView() {
-
+        title = "Review"
     }
 
     private fun initRecyclerView() {

@@ -27,7 +27,8 @@ interface TmdbService {
     suspend fun getMovieDetail(
         @Path("movie_id") movieId: Long,
         @Query("api_key") apiKey: String,
-        @Query("language") language: String = "en-US"
+        @Query("language") language: String = "en-US",
+        @Query("append_to_response") appendToResponse: String = "videos"
     ): Response<Movie>
 
     @GET("movie/{movie_id}/reviews")

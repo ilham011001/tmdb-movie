@@ -38,6 +38,7 @@ class DetailMovieViewModel(
                 _loadingState.postValue(LoadingState.LOADED)
 
                 Log.e(TAG, "response detail movie success")
+                Log.e(TAG, "response videos size: ${response.videos.results.size}")
             } catch (e: ApiException) {
                 Log.e(TAG, "ApiException: ${e.message}")
                 _loadingState.postValue(LoadingState.error(e.message))

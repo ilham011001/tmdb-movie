@@ -55,7 +55,10 @@ data class Movie(
     val voteAverage: Double,
 
     @SerializedName("vote_count")
-    val voteCount: Long
+    val voteCount: Long,
+
+    @SerializedName("videos")
+    val videos: Video
 ) {
     data class ProductionCompany(
         val id: Long,
@@ -81,5 +84,22 @@ data class Movie(
         val iso639_1: String,
 
         val name: String
+    )
+
+    data class Video(
+        val id: String,
+
+        @SerializedName("iso_639_1")
+        val iso639_1: String,
+
+        @SerializedName("iso_3166_1")
+        val iso3166_1: String,
+
+        val key: String,
+        val name: String,
+        val site: String,
+        val size: Long,
+        val type: String,
+        val results: ArrayList<Video>
     )
 }

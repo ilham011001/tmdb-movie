@@ -12,6 +12,15 @@ class WebviewReviewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview_review)
 
+        initView()
+        initWebview()
+    }
+
+    private fun initView() {
+        title = "Review"
+    }
+
+    private fun initWebview() {
         val urlReview = intent.getStringExtra("url")
 
         webview_review.webViewClient = object : WebViewClient() {
